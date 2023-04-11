@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>layoutEx3</title>
+  <style>
+    .container::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    body {
+      margin: 0 auto;
+      width: 1186px; height: 671px;
+      text-align: center;
+    }
+    .container {
+      background-color: hotpink;
+      width: 940px; height: 60px;
+      padding: 0;
+    }
+    .container li {
+      list-style: none;
+      float: left;
+      width: 20%;
+      line-height: 60px;
+    }
+    .container li a{
+      color: aliceblue;
+      line-height: 60px;
+      display: block;
+    }
+    h2 {
+      background-color: orange;
+      width: 940px; height: 100px;
+      line-height: 100px;
+    }
+    .list {
+      padding: 0;
+    }
+    .list li {
+      list-style: none;
+      background-color: red;
+      width: 300px; height: 60px;
+      line-height: 60px;
+      float: left;
+      display: block;
+     
+    }
+    .clear {
+      clear: both;
+      background-color: darkcyan;
+      width: 940px; height: 60px;
+      line-height: 60px;
+    }
+  </style>
+
+  <!-- 이뒤로는 아무리 해봐도 모르겠어요.... -->
+</head>
+<body>
+    <h1>로고</h1>
+    <ul class="container">
+      <li><a href="#">홈</a></li>
+      <li><a href="#">상품</a></li>
+      <li><a href="#">소개</a></li>
+      <li><a href="#">서비스</a></li>        
+      <li><a href="#">연락처</a></li>
+    </ul>
+    <h2>컨텐츠</h2>
+    <ul class="list">
+      <li>1번째 열</li>
+      <li>2번째 열</li>
+      <li>3번째 열</li>
+    </ul>
+      <h3 class="clear">ⓒcopyright 2022</h3>
+</body>
+</html>
