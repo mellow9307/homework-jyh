@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>backgroundEx</title>
+  <style>
+    body {
+      border: 3px solid #000;
+      border-radius: 30px;
+      width: 400px; height: 200px;
+      margin: 20px auto;
+    }
+    section {
+      margin: auto;
+      text-align: center;
+    }
+    section input {
+      border-radius: 30px;
+      background-color: lightcoral;
+      padding:5px 0 5px 30px;
+      margin: 5px;
+    }
+    .text1 input {
+      margin-top: 50px;
+      background-image: url(./images/name.png);
+      background-repeat: no-repeat;
+      background-size: 10%;
+      background-position: 5%;
+    }
+    .text2 input {
+      background-image: url(./images/email.png);
+      background-repeat: no-repeat;
+      background-size: 10%;
+      background-position: 5%;
+    }
+    .text3 input {
+      background-image: url(./images/user.png);
+      background-repeat: no-repeat;
+      background-size: 10%;
+      background-position: 5%;
+    }
+    section input:focus {
+      background-color: rgb(240, 184, 162);
+    }
+  </style>
+</head>
+<body>
+  <section class="text1">
+    <input type="text" name="userName" id="user_name" placeholder="이름을 입력하세요"  autofocus>
+  </section>
+  <section class="text2">
+    <input type="text" name="userEmail" id="user_Email" placeholder="이메일을 입력하세요">
+  </section>
+  <section class="text3">  
+    <input type="text" name="userTel" id="user_Tel" placeholder="연락처를 입력하세요">
+  </section>
+</body>
+</html>
