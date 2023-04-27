@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx4</title>
+    <style>
+        /* 
+            input:focus { 텍스트 필드에 포커스가 잡히면 }
+            input:checked { 체크박스에 체크가 되면 }
+            input:disabled { 비활성 }
+
+            input[type=checkbox]:checked {}
+        */
+        .container {
+            background-color: #DEFCF9;
+            width: 300px; height: 300px;
+        }
+        div {
+            background-color: #6096B4;
+            width: 500px; height: 100px;
+        }
+        input[type=checkbox]:checked .container {
+            display: none;
+        }
+        input[type=checkbox]:checked div {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+    <div class="container">
+        <h2>:checked</h2>
+        <p>얼음과 새가 가지에 무한한 위하여서. 오직 그러므로 따뜻한 청춘의 끓는 말이다. 않는 따뜻한 없으면 보내는 이것이다. 품었기 지혜는 인생을 이상의 몸이 피다. 이것은 뜨고, 인생의 못하다 인생에 눈에 맺어, 불어 않는 봄바람이다.</p>
+    </div>
+    <div>
+       block 
+    </div>
+</body>
+</html>
