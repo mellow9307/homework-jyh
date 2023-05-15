@@ -306,10 +306,10 @@ header .header-wrapper .nav-icon li:first-child a img {
 .review {
   width: 80%;
   margin: 0 auto;
+  font-family: var(--main-font-kr);
 }
 .review h3 {
   margin: 0;
-  font-family: var(--main-font-kr);
 }
 .review .review-top {
   justify-content: space-between;
@@ -317,7 +317,6 @@ header .header-wrapper .nav-icon li:first-child a img {
 .review .review-top a {
   align-items: baseline;
   margin-top: 50px;
-  font-family: var(--main-font-kr);
 }
 .review h3::after {
   content: "";
