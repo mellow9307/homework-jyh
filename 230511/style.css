@@ -386,6 +386,7 @@ header .header-wrapper .nav-icon li:first-child a img {
 }
 .footer-bottom {
   width: 100%;
+  font-family: var(--main-font-en);
 }
 .footer-bottom .footer-help {
   /* width: 100%; */
