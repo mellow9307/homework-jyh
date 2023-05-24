@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* 변수 */
+@import url(./variable.css);
+/* common */
+@import url(./common.css);
+
+/**** header ****/
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 0.5px solid #ddd;
+  color: rgb(78, 78, 78);
+  display: flex;
+  z-index: 100000;
+}
+header .header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1800px; */
+  width: 95%;
+  height: 75px;
+  margin: 0 auto;
+}
+header .header-wrapper h1 {
+  background: url(./images/toplogo.png) no-repeat 50% / contain;
+  text-indent: -9999px;
+  width: 120px;
+  height: 42px;
+}
+header .header-wrapper .nav {
+  font-family: var(--main-font-en);
+  font-weight: 600;
+  font-size: var(--font-size-15);
+  width: 60%;
+}
+header .header-wrapper .nav li {
+  width: 20%;
+}
+header .header-wrapper .nav li:hover {
+  color: #da672d;
+}
+header .header-wrapper .nav-icon li a {
+  margin: 10px;
+}
+header .header-wrapper .nav-icon li:first-child a img {
+  padding-top: 3px;
+}
+/**** article ****/
+
+/* main-img */
+.main-img {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.main-img a img {
+  width: 100%;
+  height: 100vh;
+}
+.main-img .img1 {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.main-img .img1:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.main-img .img1 img {
+  position: relative;
+  z-index: -1;
+}
+.main-img .main-img-text {
+  position: absolute;
+  left: 5vw;
+  top: 75%;
+}
+.main-img .main-img-text h2 {
+  font-size: var(--font-size-41);
+  font-weight: 600;
+  font-family: var(--main-font-en);
+  color: #fff;
+}
+.main-img .main-img-text .btn {
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 10px 27px;
+  display: inline-block;
+  transform: translateX(-40px);
+  margin-top: 20px;
+  transition: 0.5s;
+}
+.main-img .main-img-text .btn:hover {
+  background-color: #000;
+  border: 1px solid #000;
+}
+.main-img .img2 {
+  width: 50%;
+  position: relative;
+}
+.main-img .img2 img {
+  position: relative;
+  z-index: -1;
+}
+.main-img .img2:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.main-img .main-img-text2 {
+  position: absolute;
+  width: 50%;
+  top: 20%;
+  right: 5vw;
+  line-height: 2;
+}
+.main-img .main-img-text2 h2 {
+  font-size: var(--font-size-41);
+  font-weight: 600;
+  font-family: var(--main-font-kr);
+  color: #5d83cc;
+  text-align: left;
+}
+.main-img .main-img-text2 a {
+  font-size: var(--font-size-14);
+  width: 50%;
+  color: #5d83cc;
+}

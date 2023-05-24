@@ -359,10 +359,10 @@ header .header-wrapper .nav-icon li:first-child a img {
   padding: 0 0 0 50px;
   opacity: 0.3;
 }
-.review .review-wrapper .review-txt .review-date span {
+.review .review-wrapper .review-txt .review-date .review-img {
   display: flex;
 }
-.review .review-wrapper .review-txt .review-date span p img {
+.review .review-wrapper .review-txt .review-date .review-img p img {
   justify-content: end;
 }
 
