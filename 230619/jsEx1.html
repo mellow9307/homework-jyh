@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>listEx</title>
+</head>
+
+<body>
+    <h1>유자차</h1>
+    <p><em>손쉽게 마시는 천연 비타민C 유자차, 유자를 꺠끗이 씻어 건더기까지 깐 후 설탕을 섞어 만들어 보세요.</em><br>향도 좋고 만드는 법도 간단하답니다.</p>
+    <dl>
+        <dt>유자차란?</dt>
+        <dd>유자를 가늘게 채 썰어 설탕에 절여 두었다가 뜨거운 물에 타서 마시는 차.</dd>
+    </dl>
+
+    <section>
+        <h2>요리 재료</h2>
+        <ul>
+            <li class="material">유자 700g(4개)</li>
+            <li class="material">설탕 700g(4컵)</li>
+        </ul>
+        <h2>요리 과정</h2>
+        <ol>
+            <li class="list">유자는 깨끗이 씻어 4등분 한 후 반으로 갈라 속의 씨앗을 뺀다.</li>
+            <li class="list">손질한 유자는 믹서나 핸드믹서로 곱게 간다.</li>
+            <li class="list">유자와 동량의 설탕을 넣고 고루 섞은 후 통에 담는다.</li>
+            <li class="list">하루가 지난 후부터 끓는 물에 유자를 넣고 잘 섞어 마신다.</li>
+        </ol>
+    </section>
+    <!-- 230316-html/listEx.html -->
+
+    <script>
+        // DOM 탐색
+        const h1 = document.querySelector('h1');
+        const p = document.querySelector('p');
+        const dl = document.querySelector('dl');
+        const section = document.querySelector('section');
+        const h2 = document.querySelectorAll('h2');
+        const material = document.querySelectorAll('li');
+        const list = document.querySelectorAll('li');
+        // h1 : color
+        h1.style.color = '#0079FF';
+        // p :border
+        p.style.border = '3px dotted #FF55BB';
+        // dl : bgc
+        dl.style.backgroundColor = '#C9A7EB';
+        // section : border
+        section.style.border = '6px double #30A2FF';
+        // h2 : color
+        h2.forEach((item, idx) => {
+            item.style.color = '#FF6969';
+        });
+        // ul > li : line-hegth, font-weight
+        material.forEach((item, idx) => {
+            item.style.lineHeight = 1.6;
+            item.style.fontWeight = 'bold';
+        });
+        // ol > li : bgc
+        list.forEach((item, idx) => {
+            item.style.backgroundColor = '#F6FFA6';
+        })
+    </script>
+</body>
+
+</html>
